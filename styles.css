@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    box-sizing: content-box;
+    width: 100%;
+    height: auto;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-dark: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--off-dark);
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2em;
+    width: 350px;
+}
+
+.card_image img {
+    border-radius: 100%;
+    max-width: 5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.name {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 5px 0;
+}
+
+.location {
+    color: var(--green);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.description {
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.7rem;
+    padding-bottom: 2rem;
+}
+
+button {
+   all: unset; 
+   display: block;
+   border-radius: 0.5rem;
+   color: var(--white);
+   background-color: var(--grey);
+   font-weight: 600;
+   font-size: 0.8rem;
+   padding: 0.8rem;
+   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--green);
+    color: var(--grey);
+    cursor: pointer;
+    caret-color: black;
+    transform: scale(1.05);
+}
+
+.attribution { 
+    margin-top: 3rem;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #e8e4ea;
+}
+
+.attribution img {
+    align-items: center;
+    width: 75px;
+}
